@@ -92,17 +92,17 @@ body{
     border: 1px solid $corDeFundoBotaoPrimario;
     cursor: pointer;
 
-    // &:hover {
-        // background-color: lighten($corDeFundoBotaoPrimario, 3%);
-    // }
+    &:hover {
+        background-color: lighten($corDeFundoBotaoPrimario, 3%);
+    }
 
     &--secondary{
         background-color: $corDeFundoBotaoSecundario;
         border-color: $corDeFundoBotaoSecundario;
 
-        // &:hover{
-            // background-color: color.adjust($color, $lightness: 3%);
-        // }
+        &:hover{
+            background-color: color.adjust($color, $lightness: 3%);
+        }
     }
 
     &--dark{
