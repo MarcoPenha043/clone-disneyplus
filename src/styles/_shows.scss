@@ -5,11 +5,14 @@
     min-height: 50vw;
     
     &__list{
-        display: grid;
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
         margin-top: 44px;
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr;
+        }
 
         &--is-active {
             display: grid;
@@ -27,6 +30,12 @@
         display: flex;
         justify-content: center;
 
+        @media(max-width: 768px){
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 105px;
+        }
+
         &__button{
             border: none;
             cursor: pointer;
@@ -38,9 +47,12 @@
             margin: 0 1vw;
             border-bottom: 5px solid transparent;
         }
-        &__button--is-active{
+        &--is-active{
             border-bottom: 5px solid $corTextoSecundario;
             border-color: $corTextoSecundario;
+        }
+        @media(max-width: 768px){
+            font-size: 16px;    
         }
     }
 }
