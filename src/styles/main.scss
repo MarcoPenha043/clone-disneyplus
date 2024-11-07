@@ -101,13 +101,14 @@ body{
         border-color: $corDeFundoBotaoSecundario;
 
         &:hover{
-            background-color: color.adjust($color, $lightness: 3%);
+            background-color: lighten ($corDeFundoBotaoSecundario, 3%);
         }
     }
 
     &--dark{
-        background-color: rgba($color: $corDeFundoBotaoDark, $alpha: 0.8);
+        background-color: rgba($corDeFundoBotaoDark, 0.8);
         border-color: $corTextoSecundario;
+
         &:hover{
             background-color: $corTextoSecundario;
             color: $corDeFundo;
